@@ -1,8 +1,7 @@
 from math import ceil, sqrt
-import emoji
+
 
 numero = input("Informe um valor:  ")
-print(emoji.emojize("Algo na tela :grinning_face:"))
 if numero.isnumeric():
     raizFloat = float(numero)
     resultado = sqrt(raizFloat)
@@ -10,7 +9,7 @@ if numero.isnumeric():
     print(f"A raiz de {numero} é {resultado}")
     print(f"O cosseno de {numero} é {cosseno}")
 
-
+# print(emoji.emojize('Python is :thumbs_up:'))
 
 # raiz = numero**(1/2)
 # raiz = math.sqrt(numero)
