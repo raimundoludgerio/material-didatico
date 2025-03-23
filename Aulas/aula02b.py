@@ -1,14 +1,10 @@
-# Variáveis Booleanas
-chovendo = True
-if chovendo:
-    print("Está chovendo, muito cuidado!")
-else:
-    print("Não está chovendo, seja feliz")
+from math import sqrt, ceil
+import emoji
+# numero = float(input('Digite um numero: '))
+#
+# # raiz = numero**(1/2)
+# raiz = sqrt(numero)
+# raizArredondada = ceil(raiz)
+# print(f"A raiz quadrada de {numero} é {raizArredondada}")
 
-# Calcular a raiz quadrada utilizando potência
-
-# Importar o módulo math e calcular a raiz quadrada
-
-# Utilizar a lib emoji e mostrar como importar pelo pycharm
-
-# Falar sobre outro módulos como pygames, pandas, etc...
+print(emoji.emojize(':saluting_face:', language='alias'))
