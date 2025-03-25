@@ -1,12 +1,12 @@
 # ex014: sorteio de ordem de alunos
 # Solução feita por: Ana Alice Lopes Alves
-import random
+from random import shuffle
 
 alunos = input("Digite o nome dos alunos: ").split(",")
 
 l_alunos = [aluno.strip() for aluno in alunos]
 
-random.shuffle(l_alunos)
+shuffle(l_alunos)
 
 print(l_alunos)
 
@@ -18,7 +18,7 @@ aluno3 = input('Qual o nome do tereceiro aluno? ')
 aluno4 = input('Qual o nome do quarto aluno? ')
 
 alunos = [aluno1, aluno2, aluno3, aluno4]
-random.shuffle(alunos)
+shuffle(alunos)
 titulo = "A ordem para apagar o quadro é:"
 print("=" * 40)
 print(f"{titulo:^40}")
