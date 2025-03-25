@@ -19,11 +19,10 @@ aluno4 = input('Qual o nome do quarto aluno? ')
 
 alunos = [aluno1, aluno2, aluno3, aluno4]
 shuffle(alunos)
-titulo = "A ordem para apagar o quadro é:"
 print("=" * 40)
-print(f"{titulo:^40}")
-print(f"1º {alunos[0]:}")
-print(f"2º {alunos[1]:}")
-print(f"3º {alunos[2]:}")
-print(f"4º {alunos[3]:}")
+print("A ordem para apagar o quadro é:")
+print(f"1º {alunos[0]}")
+print(f"2º {alunos[1]}")
+print(f"3º {alunos[2]}")
+print(f"4º {alunos[3]}")
 print("=" * 40)
