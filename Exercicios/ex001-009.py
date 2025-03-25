@@ -1,16 +1,16 @@
-# Exercícios 001:
+# Exercícios
+# ex01: criar variáveis para armazenar seu nome, idade e altura
 nome = "Raimundo"
 idade = 25
 altura = 1.60
-
 print(f"o seu nome é {nome}, sua idade é {idade} e sua altura é {altura}")
 
-# Exercício 002
+# ex02: incrementar um
 contador = 0
 contador += 1
 print(contador)
 
-# Exercício 003
+# ex003: dobro, triplo, raiz
 numero = float(input("Digite um numero: "))
 dobro = numero * 2
 triplo = numero * 3
@@ -18,20 +18,20 @@ raiz = numero ** (1 / 2)
 
 print(f"O numero {numero} tem o dobro {dobro}, o triplo {triplo} e a raiz quadrada {raiz}")
 
-# Exercicio 004
+# ex004: área do quadrado
 lado = int(input("Digite um lado: "))
 area_quadrado = lado ** 2
 areaQuadrado = lado * lado
 print(f"a area do quadrado de lado {lado} é {area_quadrado}")
 print(f"a area do quadrado de lado {lado} é {areaQuadrado}")
 
-# Exercicio 005
+# ex005: média aritimética
 numero1 = float(input("Digite a primeira nota: "))
 numero2 = float(input("Digite a segunda nota: "))
 media = (numero1 + numero2) / 2
 print(f"A media é {media}")
 
-# Exercicio 006
+# ex006: divisão inteira e resto de divisão
 numero1 = int(input("Digite o primeiro numero: "))
 numero2 = int(input("Digite o segundo numero: "))
 resto = numero1 % numero2
@@ -42,19 +42,19 @@ print(f"a divisao interia é {divisao}", end=' ')
 print(f"e o resto de {resto}")
 print("-"*40)
 
-# Ex007
+# ex007: Celsius para fahrenheit
 graus_c = float(input('Informe a temperatura em graus C: '))
 grau_f = graus_c * 1.8 + 32
 print(f'A temperatura em graus F: {grau_f}')
 
 
-# ex008
+# ex008: calculo IMC
 altura = float(input("Informe a sua altura: "))
 peso = float(input("Informe o peso: "))
 imc = peso / (altura * altura)
 print(f"Com a altura {altura} e o peso {peso} o seu imc é {imc:.2f}")
 
-# ex009
+# ex009: km percorrido de um carro alugado
 km_rodado = float(input("Informe quantos km o carro rodou: "))
 quantidade_dias = int(input("Informe quantos dias o carro rodou: "))
 
