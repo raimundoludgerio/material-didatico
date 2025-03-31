@@ -16,4 +16,6 @@ if media >= 7:
     print("Parabéns, você foi aprovado!")
 else:
     print("Estude mais!")
+
+# Condições simplificadas
 print("Aprovado!" if media >= 7 else "Reprovado!")
