@@ -12,10 +12,12 @@ nota2 = float(input('Digite a segunda nota: '))
 
 media = (nota1 + nota2) / 2
 
-if media >= 7:
-    print("Parabéns, você foi aprovado!")
-else:
-    print("Estude mais!")
+# if media >= 7:
+#     print("Parabéns, você foi aprovado!")
+# else:
+#     print("Estude mais!")
 
 # Condições simplificadas
-print("Aprovado!" if media >= 7 else "Reprovado!")
+resultado = "Aprovado!" if media >= 7 else "Reprovado!"
+
+print(f"Sue média foi {media}, você foi {resultado}")
