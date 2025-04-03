@@ -19,13 +19,23 @@
         }
 
         h2 {
-            font-weight: 500;
+            font-weight: 600;
         }
 
         p {
-            font-weight: 300;
+            font-weight: normal;
         }
 
+        p>em {
+            font-weight: 900;
+        }
+
+        aside>p {
+            font-weight: 300;
+        }
+        aside>p>em{
+            font-weight: bold;
+        }
         footer {
             display: flex;
             justify-content: center;
@@ -36,6 +46,7 @@
         footer>p {
             font-weight: lighter;
         }
+
         footer>p>em {
             font-weight: 300;
         }
@@ -43,27 +54,41 @@
 </head>
 
 <body>
-    <h1>x Utilizando fontes</h1>
-    <h2>Subtítulo</h2>
-    <h2>Teste</h2>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa placeat dolor, quam, delectus illo ullam autem
-        exercitationem inventore quaerat, tempore suscipit facilis rerum voluptatibus qui soluta architecto quis
-        laboriosam consequuntur. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi, officia alias!
-        Repudiandae quibusdam atque alias odio a! Odit reiciendis hic ipsa, voluptatum natus modi pariatur asperiores
-        ratione in minima rem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias laudantium
-        perspiciatis voluptas vitae repellat animi et, nemo iste deleniti necessitatibus inventore ratione ex voluptates
-        id sed cum, vero eos? Tempore.</p>
+    <h1>Utilizando fontes</h1>
+    <section>
+        <h2>Subtítulo</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa placeat dolor, quam, delectus illo ullam
+            <em>autem
+                exercitationem inventore quaerat </em>, tempore suscipit facilis rerum voluptatibus qui soluta
+            architecto quis
+            laboriosam consequuntur. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi, officia alias!
+            Repudiandae quibusdam atque alias odio a! Odit reiciendis hic ipsa, voluptatum natus modi pariatur
+            asperiores
+            ratione in minima rem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias laudantium
+            perspiciatis voluptas vitae repellat animi et, nemo iste deleniti necessitatibus inventore ratione ex
+            voluptates
+            id sed cum, vero eos? Tempore.</p>
 
-    <h2>Subtítulo 02</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum dignissimos sed, est possimus iusto voluptatum
-        sapiente? Dicta, modi porro iure illo quis dolores doloremque et! Architecto iure laborum tempore hic. Lorem
-        ipsum dolor sit amet consectetur adipisicing elit. Consectetur, nisi! Harum obcaecati voluptates sapiente, vero
-        autem velit illo incidunt! Nulla eaque voluptatum iure! Nostrum nemo facere architecto sequi sunt eveniet!</p>
+        <h2>Subtítulo 02</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum dignissimos sed, est possimus iusto
+            voluptatum
+            sapiente? Dicta, modi porro iure illo quis dolores doloremque et! Architecto iure laborum tempore hic. Lorem
+            ipsum dolor sit amet consectetur adipisicing elit. Consectetur, nisi! Harum obcaecati voluptates sapiente,
+            vero
+            autem velit illo incidunt! Nulla eaque voluptatum iure! Nostrum nemo facere architecto sequi sunt eveniet!
+        </p>
 
-    <h2>Subtítulo 03</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, ratione provident tenetur autem porro
-        laboriosam quas magni aliquid alias laborum inventore beatae tempora rerum, natus voluptates dignissimos quos!
-        Aperiam, adipisci.</p>
+        <h2>Subtítulo 03</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, ratione provident tenetur autem porro
+            laboriosam quas magni aliquid alias laborum inventore beatae tempora rerum, natus voluptates dignissimos
+            quos!
+            Aperiam, adipisci.</p>
+        <aside>
+            <p>Lorem ipsum <em>dolor sit amet consectetur adipisicing</em> elit. Delectus officiis assumenda ad, nisi libero
+                provident officia praesentium ab ratione placeat iure minima molestiae quidem quos aliquid dolore,
+                expedita eum cumque.</p>
+        </aside>
+    </section>
 
     <footer>
         <p>Desenvolvido por: <em>Raimundo Marcos</em></p>
