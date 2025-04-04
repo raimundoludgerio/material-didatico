@@ -11,14 +11,20 @@
 
         body {
             font-family: "Work Sans", Arial, Helvetica, sans-serif;
+            /*
+                Meridas absolutas: 
+                    cm, mm, in, px, pt, pc
+                
+                Medidas relativas:
+                    em, ex, rem, vw, vh, %
+            */
+            /*Tamanho normal da fonte 16px == 2em */
             font-size: 16px;
         }
 
         h1 {
-            font-weight: 800;
             font-style: italic;
             text-decoration: underline;
-
         }
 
         h2 {
@@ -33,7 +39,7 @@
             font-size: 3em;
             font-style: italic; */
             /*font: style, weight, size, family*/
-            font: 300 3em "Work Sans", sans-serif;
+            font: italic 300 3em "Work Sans", sans-serif;
 
         }
 
@@ -42,11 +48,11 @@
         }
 
         p>em {
-            font-weight: 900;
+            font-weight: bolder;
         }
 
         aside>p {
-            font-weight: 300;
+            font-weight: lighter;
         }
 
         aside>p>em {
