@@ -1,0 +1,96 @@
+html {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #bbb;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#secao1 {
+    width: 50%;
+    height: 50%;
+    background-color: #e8b141ff;
+    text-align: center;
+}
+#secao1>h1 {
+   color: #4570b6ff;
+}
+
+
+#secao2 {
+    width: 50%;
+    height: 50%;
+    background-color: #801f7dff;
+    text-align: center;
+}
+
+#secao2>h1 {
+    color: #4570b6ff;
+}
+
+#secao2>h2 {
+    color: #5b2880ff;
+}
+
+#secao3 {
+    width: 50%;
+    height: 50%;
+    background-color: #ffed00ff;
+    text-align: center;
+}
+
+#secao3>h1 {
+    color: #5b2880ff;
+}
+
+#secao3>h2 {
+    color: #801f7dff;
+}
+
+#secao3>p {
+    color: #4570b6ff;
+}
+
+#secao4 {
+    width: 50%;
+    height: 50%;
+    background-color: #009de1ff;
+    text-align: center;
+}
+
+#secao4>h1 {
+    color: #5b2880ff;
+}
+
+#secao4>h2 {
+    color: #c30d1aff;
+}
+
+#secao4>p {
+    color: #ffed00ff;
+}
+
+#secao5 {
+    width: 50%;
+    height: 50%;
+    background-color: #EBCFFF;
+    text-align: center;
+}
+
+#secao5>h1 {
+    color: #5b2880ff;
+}
+
+#secao5>h2 {
+    color: #B589D4;
+}
+
+#secao5>p {
+    color: #5B2880;
+}
