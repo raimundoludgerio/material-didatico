@@ -7,6 +7,8 @@ import emoji
     O empréstimo é aprovado quando as parcelas não ultrapassa 30% do salário.
 
     Solução desenvolvida por: Bianca Vieira Francelino
+    
+    PS: Solução atualizada pelo professor com algumas alterações.
 """
 valor = float(input('Digite o valor da casa: '))
 salario = float(input('Digite o seu salario: '))
