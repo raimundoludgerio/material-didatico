@@ -12,3 +12,4 @@ Enquanto 1, 2 e 4 não formam um triângulo.
 Como uma das condições falha (1 + 2 não é maior que 4),
 esses três segmentos não podem formar um triângulo.
 """
+
