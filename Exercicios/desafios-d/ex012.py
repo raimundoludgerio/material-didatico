@@ -8,6 +8,20 @@
     não a troca de óleo, de acordo com a quantidade de etanol abastecido.
     (Considere R$ 4,13 o Litro de Etanol).
 
-    Solução desenvolvida por:
+    Solução desenvolvida por: Pedro Guilherme de Freitas Avelino
 
 """
+
+combustivel = str(input('Qual foi o combustível escolhido? ')).lower()
+valor = float(input('Qual o valor a ser pago? '))
+
+quantidade_litros = valor / 4.13
+print(f"Esse valor consegue abastecer {quantidade_litros:.2f} litros de {combustivel}. ", end='')
+if (combustivel == 'etanol') and (quantidade_litros  > 30):
+    print(f'Ganhou uma troca de óleo gratuita!')
+
+elif (combustivel == 'etanol') and (quantidade_litros  <= 30):
+    print(f'Infelizmente não ganhou uma troca de óleo.')
+
+else:
+    print(f'Infelizmente não ganhou troca de óleo.')
