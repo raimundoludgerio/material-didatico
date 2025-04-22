@@ -3,6 +3,6 @@ while True:
     if n < 0:
         break
     print("=" * 80)
-    for i in range(1,10):
-        print(f"{n} X {i} = {i * n}")
+    for i in range(1,11):
+        print(f"{n} X {i} = {i * n}".center(40))
     print("=" * 80)
