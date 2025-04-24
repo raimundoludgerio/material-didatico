@@ -22,4 +22,4 @@ class PizzaBuilder:
 
 # Uso
 pizza = PizzaBuilder().add_queijo().add_tomate().build()
-print(pizza.ingredientes)  # Saída: ['Queijo', 'Tomate']
+print(pizza)  # Saída: ['Queijo', 'Tomate']
