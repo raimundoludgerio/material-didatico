@@ -11,7 +11,8 @@
 def exibir_menu():
     print("="*40)
     print("Informe uma opção: ")
-    print("1: à vista, com 10%")
+    print("1: à vista, com 10%".center(40))
+              
     print("2: à vista + cartão, com 5% de desconto")
     print("3: Cartão, até 2x, sem desconto: ")
     print("4: Cartão, com mais de duas vezes, com 20% de juros ")
@@ -34,7 +35,11 @@ while opcao != 0:
         exibir_menu()
     else:
         print("OPÇÃO INVÁLIDA!")
-    print(f"O valor final do prduto foi de R${valor_final:.2f}")
+    print(f"O valor final do \n prduto foi de R${valor_final:.2f}")
+    print("O valor \n do produto é:", valor_produto)
+    print("a opção esolhida foi {} VALOR DO PODUTO É R${}".format(opcao, valor_produto))
+
+
     valor_produto = int(input("Informe o valor do produto: "))
     opcao = int(input("Informe a opção: "))
 
