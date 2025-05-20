@@ -1,25 +1,28 @@
-def calcular_area_retangulo(largura, altura):
-    area = largura * altura
+def calcular_area_retangulo(*numeros):
+    area = numeros[0] * numeros[1]
     return area
+
 
 def somar(numero1, numero2):
     return numero1 + numero2
+
 
 def numero_par(numero):
     return numero % 2 == 0
 
 
 def saudacao(nome):
-    print(f"Olá, {nome}! Seja bem-vindo(a).")
+    print(f" olá, {nome}! Seja (a).")
 
 
 def celsius_para_fahrenheit(celsius):
-    return (celsius * 9/5) + 32
+    return (celsius * 9 / 5) + 32
 
 
 def contador(*numeros):
     return len(numeros)
 
-print(contador(2,5,6,1,2))
-print(contador(1,10,9))
-print(contador(7,2,1,5))
+
+print(contador(5,6,7))
+print(contador(5,6,7,8,0,2,True))
+print(contador(5,6))

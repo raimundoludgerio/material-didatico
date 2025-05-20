@@ -4,7 +4,7 @@ def ola_mundo():
 
 # Desafio 2
 def saudacao(nome):
-    pass
+    return f"olá, {nome}! Seja bem-vindo(a)."
 
 # Desafio 3
 def dobro(numero):
