@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Blog - Home</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Meu Blog</h1>
+    </header>
+    <main>
+        {% if 12 >= hora_atual %}
+            <p>Bom Dia</p>
+        {% elif 18 >= hora_atual %}
+            <p>Boa tarde</p>
+        {% else %}
+            <p>Boa noite</p>
+        {% endif %}
+
+        <ul>
+            {% for usuario in usuarios %}
+                <li>{{ usuario.nome }} - {{ usuario.idade }} anos</li>
+            {% endfor %}
+        </ul>
+    </main>
+    <footer>
+        <p>&copy; 2023 Meu Blog</p>
+    </footer>
+</body>
+</html>
