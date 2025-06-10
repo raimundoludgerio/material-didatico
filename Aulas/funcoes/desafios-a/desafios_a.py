@@ -12,7 +12,7 @@ def dobro(numero):
 
 # Desafio 4
 def media(nota1, nota2, nota3):
-    pass
+    return (nota1 + nota2 + nota3) / 3
 
 # Desafio 5
 def maior_de_idade(idade):
@@ -44,7 +44,7 @@ def inverte_texto(texto):
 
 # Desafio 12
 def media(*notas):
-    pass
+    return sum(notas) / len(notas)
 
 # Desafio 13
 def numero_maior(*numeros):

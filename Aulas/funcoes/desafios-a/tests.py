@@ -19,7 +19,7 @@ class TesteFuncoes(unittest.TestCase):
     def test_media(self):
         self.assertEqual(desafios.media(5, 7, 9), 7.0)
         self.assertEqual(desafios.media(10, 10, 10), 10.0)
-        self.assertEqual(desafios.media(0, 0, 0), 0.0)
+        self.assertEqual(desafios.media(0, 0, 0), 0)
 
     def test_maior_de_idade(self):
         self.assertTrue(desafios.maior_de_idade(18))
