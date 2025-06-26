@@ -35,6 +35,17 @@ def post(post_id):
         return render_template('post.html', post=post)
     else:
         return "Post não encontrado", 404
+@app.route('/login', methods=['POST'])
+def login(post_id):
+    # Encontrar o post com o ID correspondente
+    post = next((p for p in posts if p['id'] == post_id), None)
+    if post:
+        return render_template('post.html', post=post)
+    else:
+        return "Post não encontrado", 404
+
+
+
 
 if __name__ == '__main__':
     app.run(debug=True)
