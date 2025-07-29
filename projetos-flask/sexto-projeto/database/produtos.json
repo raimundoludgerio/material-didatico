@@ -1,0 +1,17 @@
+[
+    {
+        "nome": "Papel",
+        "descricao": "Folha A4",
+        "preco": 22.50
+    },
+    {
+        "nome": "Caneta",
+        "descricao": "Bic cor preta",
+        "preco": 2.30
+    },
+    {
+        "nome": "Lápis",
+        "descricao": "Faber Castel Madeira",
+        "preco": 2.00
+    }
+]
