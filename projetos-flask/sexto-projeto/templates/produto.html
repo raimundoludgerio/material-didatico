@@ -8,7 +8,21 @@
 </head>
 
 <body>
+
+    {% if usuario.admin %}
+        <p>Você é um administrador.</p>
+    {% else %}
+        <p>Você é um usuário comum.</p>
+    {% endif %}
+    
     <ul>
+        {% for post in posts %}
+            <li>{{ post.titulo }}</li>
+        {% endfor %}
+    </ul>
+
+
+        <ul>
         {% for produto in produtos %}
             <li>{{ produto.nome }} - R$ {{ produto.preco }}</li>
         {% endfor %}
