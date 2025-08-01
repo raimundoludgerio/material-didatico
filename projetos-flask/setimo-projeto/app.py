@@ -1,14 +1,18 @@
-from flask import Flask, render_template
-app = Flask(__name__)
+from flask import Flask
+from auth.routes import auth_bp
+from authors.routes import authors_bp
+from posters.routes import posts_bp
 
-@app.route('/')
-def home():
-    return render_template('home.html')
+def create_app():
+    app = Flask(__name__)
+    app.secret_key = 'segredo_super_simples'
 
-@app.route('/about')
-def about():
-    return render_template('about.html')
+    app.register_blueprint(auth_bp)
+    app.register_blueprint(authors_bp)
+    app.register_blueprint(posts_bp)
 
+    return app
 
 if __name__ == '__main__':
+    app = create_app()
     app.run(debug=True)
