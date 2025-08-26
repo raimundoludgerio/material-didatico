@@ -5,11 +5,30 @@ produtos = {
 
 }
 
-
 pessoa = {
     'nome': 'Maria',
     'idade': 12
 }
+
+idade = pessoa.pop("idade")
+print(idade)        # 12
+print(pessoa)       # {'nome': 'Maria'}
+
+
+print(pessoa.items())  
+# dict_items([('nome', 'Maria'), ('idade', 12)])
+
+
+
+
+pessoa.keys() # dict_keys(['nome', 'idade'])
+
+
+
+pessoa.get("nome")
+pessoa.get("peso", "Não existe peso")
+
+
 
 print(pessoa.items())
 
