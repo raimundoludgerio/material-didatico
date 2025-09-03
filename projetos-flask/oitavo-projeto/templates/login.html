@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block title %} Login {% endblock %}
+
+{% block conteudo %}
+    <div class="login-container">
+        <h2>Login</h2>
+        <form action="/login" method="post">
+        <label for="username">Usuário</label>
+        <input type="text" id="username" name="username" placeholder="Digite seu usuário" required>
+
+        <label for="password">Senha</label>
+        <input type="password" id="password" name="password" placeholder="Digite sua senha" required>
+
+        <input type="submit" value="Entrar">
+        </form>
+        <div class="footer">
+        © 2025 - Seu Site
+        </div>
+    </div>
+{% endblock %}
