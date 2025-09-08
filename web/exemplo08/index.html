@@ -1,86 +1,198 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tabelas</title>
-    <style>
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            flex: 1;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-top: 150px;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Formulário Completo</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f2f2f2;
+      padding: 20px;
+    }
 
-        table {
-            align-items: center;
-        }
-        td{
-            margin-left: 8px;
-        }
-    </style>
+    h1 {
+      text-align: center;
+    }
+
+    form {
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 800px;
+      margin: auto;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    input, select, textarea, button {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+
+    button {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+    .form-group-inline {
+      display: flex;
+      gap: 10px;
+    }
+
+    .form-group-inline > div {
+      flex: 1;
+    }
+  </style>
 </head>
-
 <body>
-    <table border="1" cellpadding="0" cellspacing="0" style="width:629px;">
-        <tbody>
-            <tr>
-                <td style="width:25px; align-items: start;">1</td>
-                <td style="width: 340px;">
-                    <p>HISTÓRICO</p>
-                    <ol>
-                        <li>Origem do computador </li>
-                        <li>História e evolução do computador</li>
-                    </ol>
-                </td>
-                <td>Ead [ ] Presencial [X]</td>
-            </tr>
-            <tr>
-                <td style="width:25px; align-items: start;">2</td>
-                <td style="width: 340px;">
-                    <p>COMPONENTES DE UM SISTEMA COMPUTACIONAL</p>
-                    <ol>
-                        <li>Sistemas de numeração e conversão entre bases numéricas</li>
-                        <li>Representação de números binários com sinal</li>
-                        <li>Operações aritméticas em binário</li>
-                    </ol>
-                </td>
-                <td>Ead [ ] Presencial [X]</td>
-            </tr>
-            <tr>
-                <td style="width:25px; align-items: start;">3</td>
-                <td style="width: 340px;">
-                    <p>INTRODUÇÃO À ELETRÔNICA DIGITAL</p>
-                    <ol>
-                        <li>Portas lógicas</li>
-                        <li>Álgebra de boole</li>
-                        <li>Simplificação de circuitos lógicos - Mapa de Veitch-Karnaugh</li>
-                        <li>Circuitos seqüenciais</li>
-                        <li>Resolução de problemas utilizando eletrônica digital</li>
-                        <li>Computação reconfigurável</li>
-                    </ol>
-                </td>
-                <td>Ead [ ] Presencial [X]</td>
-            </tr>
-            <tr>
-                <td style="width:25px; align-items: start;">3</td>
-                <td style="width: 340px;">
-                    <p>INTRODUÇÃO À ARQUITETURA DE COMPUTADORES</p>
-                    <ol>
-                        <li>Unidade central de processamento</li>
-                        <li>Memória</li>
-                        <li>Sistemas de entrada e saída</li>
-                        <li>Circuitos seqüenciais</li>
-                        <li>Software, encadeamento e conjunto de instruções</li>
-                    </ol>
-                </td>
-                <td>Ead [ ] Presencial [X]</td>
-            </tr>
-        </tbody>
-    </table>
-</body>
+  <h1>Formulário com Todos os Inputs</h1>
+  <form>
+    <!-- Text -->
+    <div class="form-group">
+      <label for="text">Nome completo:</label>
+      <input type="text" id="text" name="text" placeholder="Digite um texto">
+    </div>
 
+    <!-- Password -->
+    <div class="form-group">
+      <label for="password">Senha:</label>
+      <input type="password" id="password" name="password">
+    </div>
+
+    <!-- Email -->
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email">
+    </div>
+
+    <!-- Number -->
+    <div class="form-group">
+      <label for="number">iDADE:</label>
+      <input type="number" id="number" name="number" min="0" max="100">
+    </div>
+
+    <!-- Tel -->
+    <div class="form-group">
+      <label for="tel">Telefone:</label>
+      <input type="tel" id="tel" name="tel">
+    </div>
+
+    <!-- URL -->
+    <div class="form-group">
+      <label for="url">URL:</label>
+      <input type="url" id="url" name="url">
+    </div>
+
+    <!-- Search -->
+    <div class="form-group">
+      <label for="search">Buscar:</label>
+      <input type="search" id="search" name="search">
+    </div>
+
+    <!-- Date -->
+    <div class="form-group">
+      <label for="date">Data:</label>
+      <input type="date" id="date" name="date">
+    </div>
+
+    <!-- Time -->
+    <div class="form-group">
+      <label for="time">Hora:</label>
+      <input type="time" id="time" name="time">
+    </div>
+
+    <!-- Datetime-local -->
+    <div class="form-group">
+      <label for="datetime-local">Data e Hora Local:</label>
+      <input type="datetime-local" id="datetime-local" name="datetime-local">
+    </div>
+
+    <!-- Month -->
+    <div class="form-group">
+      <label for="month">Mês:</label>
+      <input type="month" id="month" name="month">
+    </div>
+
+    <!-- Week -->
+    <div class="form-group">
+      <label for="week">Semana:</label>
+      <input type="week" id="week" name="week">
+    </div>
+
+    <!-- File -->
+    <div class="form-group">
+      <label for="file">Arquivo:</label>
+      <input type="file" id="file" name="file">
+    </div>
+
+    <!-- Color -->
+    <div class="form-group">
+      <label for="color">Cor:</label>
+      <input type="color" id="color" name="color">
+    </div>
+
+    <!-- Range -->
+    <div class="form-group">
+      <label for="range">Intervalo:</label>
+      <input type="range" id="range" name="range" min="0" max="100">
+    </div>
+
+    <!-- Checkbox -->
+    <div class="form-group">
+      <label>Opções (Checkbox):</label>
+      <label><input type="checkbox" name="option1" value="1"> Opção 1</label>
+      <label><input type="checkbox" name="option2" value="2"> Opção 2</label>
+    </div>
+
+    <!-- Radio -->
+    <div class="form-group">
+      <label>Escolha (Radio):</label>
+      <label><input type="radio" name="radioGroup" value="a"> A</label>
+      <label><input type="radio" name="radioGroup" value="b"> B</label>
+    </div>
+
+    <!-- Hidden -->
+    <input type="hidden" name="hiddenValue" value="12345">
+
+    <!-- Select -->
+    <div class="form-group">
+      <label for="select">Selecione uma opção:</label>
+      <select id="select" name="select">
+        <option value="">--Escolha--</option>
+        <option value="op1">Opção 1</option>
+        <option value="op2">Opção 2</option>
+      </select>
+    </div>
+
+    <!-- Textarea -->
+    <div class="form-group">
+      <label for="textarea">Texto Longo:</label>
+      <textarea id="textarea" name="textarea" rows="4"></textarea>
+    </div>
+
+    <!-- Button -->
+    <div class="form-group">
+      <button type="submit">Enviar</button>
+    </div>
+  </form>
+</body>
 </html>
