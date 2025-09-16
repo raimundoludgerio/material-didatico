@@ -1,3 +1,22 @@
 [
-
+    {
+        "username": "Maria",
+        "email": "maria@teste.com",
+        "password   ": "maria123"
+    },
+    {
+        "username": "Jo\u00c3\u00a3o",
+        "email": "jo\u00c3\u00a3o@teste.com",
+        "password   ": "jo\u00c3\u00a3o123"
+    },
+    {
+        "username": "Cicero",
+        "email": "cicero@teste.com",
+        "password   ": "cicero123"
+    },
+    {
+        "username": "admin",
+        "email": "admin@teste.com",
+        "password   ": "vhqkdvhqkd"
+    }
 ]
