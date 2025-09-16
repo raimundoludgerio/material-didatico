@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>{% block title %}Homepage{% endblock %}</title>
+    {% block styles %} {% endblock %}
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 text-gray-800 min-h-screen flex flex-col">
+<header class="bg-blue-600  text-white">
+    <nav class="container mx-auto flex justify-between items-center py-4 px-6">
+        <div class="text-lg font-bold">Aprendendo Criptografia</div>
+        <div class="space-x-4">
+            <a href="/" class="hover:underline">Início</a>
+            <a href="{{ url_for('auth.login') }}" class="hover:underline">Login</a>
+            <a href="{{ url_for('auth.register') }}" class="hover:underline">Cadastro</a>
+        </div>
+    </nav>
+</header>
+
+<main class="bg-gray-100 flex items-center justify-center flex-grow px-6 py-10">
+    {% block content %}
+    {% endblock %}
+</main>
+
+<!-- Footer -->
+<footer class="bg-gray-800 text-white text-center py-4">
+    <p>&copy; 2025 Raimundo Marcos. Todos os direitos reservados.</p>
+</footer>
+</body>
+
+</html>

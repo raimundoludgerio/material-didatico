@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block title %}Página Inicial{% endblock %}
+{% block content %}
+<div class="bg-white rounded-lg shadow p-8 text-center">
+    <h2 class="text-3xl font-bold mb-4">Olá, {{ current_user.username }}!</h2>
+    <p class="text-lg text-gray-700">Login efetuado com sucesso.</p>
+    <p class="text-gray-600 mt-2">Seja bem-vindo ao seu painel de usuário.</p>
+
+    <div class="mt-8">
+        <a href="/" class="inline-block bg-blue-600 text-white px-6 py-3 rounded hover:bg-blue-700 transition">
+            Ir para a Página Inicial
+        </a>
+    </div>
+</div>
+{% endblock %}
