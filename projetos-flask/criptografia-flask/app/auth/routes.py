@@ -10,6 +10,10 @@ def login():
     login_form = LoginForm()
     if login_form.validate_on_submit():
         user = User.find_by_email(login_form.email.data)
+        senha = user.password
+
+        print(senha)
+        print(user.decript_fernet())
         flash(f'Bem-vindo, {user.username}!', 'success')
         return redirect(url_for('main.index'))
     return render_template('login.html', form=login_form)

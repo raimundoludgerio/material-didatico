@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+{% block conteudo %}
+<form class="row g-3">
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+    </div>
+    <div class="col-auto">
+        <label for="inputPassword2" class="visually-hidden">Password</label>
+        <input type="password" class="form-control" id="inputPassword2" placeholder="Password">
+    </div>
+    <div class="col-auto">
+        <button type="submit" class="btn btn-primary mb-3" id="abrirModalBtn">Logar</button>
+    </div>
+</form>
+
+<div id="meuModal" class="modal">
+    <div class="modal-content">
+        <span id="fecharModalBtn" class="close">&times;</span>
+        <h2>Título do Modal</h2>
+        <p>Este é o conteúdo do meu modal.</p>
+    </div>
+</div>
+
+<script>
+    // 1. Obter os elementos do DOM
+    const abrirModalBtn = document.getElementById("abrirModalBtn");
+    const meuModal = document.getElementById("meuModal");
+    const fecharModalBtn = document.getElementById("fecharModalBtn");
+
+    // 2. Adicionar um ouvinte de evento para abrir o modal
+    abrirModalBtn.addEventListener("click", () => {
+        meuModal.style.display = "block"; // Exibe o modal
+    });
+
+    // 3. Adicionar um ouvinte de evento para fechar o modal
+    fecharModalBtn.addEventListener("click", () => {
+        meuModal.style.display = "none"; // Oculta o modal
+    });
+
+    // 4. Fechar o modal se o utilizador clicar fora do conteúdo do modal
+    window.addEventListener("click", (event) => {
+        if (event.target == meuModal) { // Verifica se o alvo do clique é o próprio modal
+            meuModal.style.display = "none"; // Oculta o modal
+        }
+    });
+
+</script>
+{% endblock %}

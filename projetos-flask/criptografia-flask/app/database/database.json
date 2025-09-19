@@ -1,22 +1,42 @@
 [
     {
-        "username": "Maria",
-        "email": "maria@teste.com",
-        "password   ": "maria123"
+        "username": "Marcos",
+        "email": "marcos@teste.com",
+        "password": "b'gAAAAABoyVzXVun9U-xH6qGCgEJBEhalATfDEAbkWwnvd8fouRyQ6mCk4Ww2PE74xCwuG6BYxeDmp0P5xw4uXYxK8Cx4_eV22A=='"
     },
     {
-        "username": "Jo\u00c3\u00a3o",
-        "email": "jo\u00c3\u00a3o@teste.com",
-        "password   ": "jo\u00c3\u00a3o123"
-    },
-    {
-        "username": "Cicero",
-        "email": "cicero@teste.com",
-        "password   ": "cicero123"
+        "username": "testes",
+        "email": "teste@teste.com",
+        "password": "b'gAAAAABoyV0eCqL_M6M8YUBgTx3xIzXUPGimeC5OzAS_3c91U2qx7vaEqQxNrTWsmqrpsiIfzxSIhYQ0WO9XtwI2fJDPGvCtuA=='"
     },
     {
         "username": "admin",
-        "email": "admin@teste.com",
-        "password   ": "vhqkdvhqkd"
+        "email": "teste@teste.com.br",
+        "password": "b'\\x1fJa\\xe1\\x84\\x02\\xc4\\xa3 \\x16\\xad\\xe4\"\\x939!\\xfd\\xedB\\xb1\\xf1\\x81\\t\\xea\\xebJ\\xe5\\xfc\\xf6\\xb9b/=\\xbd\\x1e|w\\xf77\\xafSL~\\x86\\x925\\xb7\\xb2%\\x9b\\xdc+\\xfd\\x18\\xd5\\xe7\\x96\\xdb\\xb0\\xbb\\xbf\\xac\\xbdCoj\\x8a@\\xa5CjFk>`:/\\x82=|\"*\"\\xef\\x19\\x19\\x14Z\\xd4\\xce\\x8a\\xc2F\\xab\\x1c\\x16\\xb7/o\\xe9^\\r\\xda\\x9e\\x1e\\xb3d\\x99\\x14\\xaf-\\x823\\'Q\\xc3\\xb5>Y-M\\xba\\x8d\\xbb\\xca\\xbd\\xfd*oy\\x89:\\x13D\\x94r\\xcdZ\\xba\\xecV\\x92mL\\x87T\\xec{\\x1d\\xfc\\x9e\\x1bP\\x91\\r\\x1f\\xe2\\xbe\\x87\\xd2\\xda\\xe5\\xf3\\x12?\\xddvO\\x13\\xc5Q\\xc3\\xb5\\xa0\\xdf}(M12\\xb9\\xce\\xa5\\xa7\\xc6LS\\xe6\\xd3\\x19\\xae!PA\\xcf\\xbb\\xfe\\xfc\\x8dm\\xa0pt\\xcc\\nk\\x11d\\xe2\\xc7\\xdai\\xef\\xa2\\x80\\xe8\\n\\x907m9\\xd9\\xe3\\x92\\xfd\\xe7Uh\"\\x13\\x02o\\xd7.#\\xaf\\x8f\\r\\xc8\\x17\\xf2\\x93\\x92\\xab5\\xce\\x1f\\xcb\\x9b\\xa9\\xca/\\xdd\\x02!\\xc3'"
+    },
+    {
+        "username": "administrador",
+        "email": "a@a.com",
+        "password": "8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92"
+    },
+    {
+        "username": "RAIMUNDO PROFESSOR",
+        "email": "raimundo@marcos.com",
+        "password": "123456"
+    },
+    {
+        "username": "Jo\u00e3o",
+        "email": "jao@ifpb.br",
+        "password": "bomdia"
+    },
+    {
+        "username": "kaline",
+        "email": "kaline@teste.com",
+        "password": "erpgld"
+    },
+    {
+        "username": "Ari",
+        "email": "ar@osvaldo.com",
+        "password": "b'gAAAAABoyXxpcborye7DZMhbncutsRYSzLHls5PYd5TSkDD1c4wXxmlvhQ6GErgtkhhG_MKWVVacSQT-9FhPo1PLOA3opoNiIQ=='"
     }
 ]
