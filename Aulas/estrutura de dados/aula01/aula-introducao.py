@@ -15,19 +15,25 @@ for i in range(50):
     }
     estudantes.append(estudante)
 
+
+#print(estudantes)
+
+
 # Função para retorna um estudante
 
-def escolha_estudante(lista_estudante, matricula):
-    encontrado = "Não encontrado"
+def escolha_estudante(lista_estudante, nome):
+    encontrado = []
     for aluno in lista_estudante:
-        if aluno["matricula"] == matricula:
+        if aluno["nome"] == nome:
             print("Encontreiiii")
-            encontrado = aluno
+            encontrado.append(aluno)
+    if encontrado == []:
+        return "Não encontrado"
     return encontrado
 
 matricula = estudantes[25]["matricula"]
 
-estudante_encontrado = escolha_estudante(estudantes, 8763387)
+estudante_encontrado = escolha_estudante(estudantes, nome="Richard")
 print(estudante_encontrado)
 # Reorganização dos dados
 
