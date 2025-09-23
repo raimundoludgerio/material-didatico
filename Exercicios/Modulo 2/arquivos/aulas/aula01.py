@@ -3,10 +3,21 @@ caminho = ""
 modo = "r"
 
 # Abrindo e lendo dados de um arquivo
-arquivo = open("Exercicios/Modulo 2/arquivos/dados.txt", "r")
-linhas = arquivo.readlines()
-print(linhas)
-arquivo.close()
+# arquivo = open("../codigo_da_vinci.txt", "r",encoding='utf-8')
+novo_arquivo = open("../novo.txt", "w", encoding='utf-8')
+novo_arquivo.write("Faroeste Cabloco")
+novo_arquivo.write("\n")
+novo_arquivo.write("Não tinha medo o tal João")
+frases = []
+for i in range(5):
+    frase = input("Informe uma frase: ")
+    frases.append(frase+"\n")
+novo_arquivo.writelines(frases)
+# linhas = arquivo.readlines()
+# for linha in linhas:
+#     print(linha)
+# print(linhas)
+novo_arquivo.close()
 
 # # Abrindo e lendo todas as linhas de um arquivo
 # arquivo = open("Exercicios/Modulo 2/arquivos/dados.txt", "r")
