@@ -8,16 +8,23 @@
 .container {
     border: 1px solid red;
     display: flex;
-    width: 100%;
+    width: 300px;
 }
 
 .principal {
-    flex-shrink: 6px;
     background-color: yellowgreen;
+    flex-shrink: 1;
 }
 
 .secundario {
     background-color: rgb(93, 81, 123);
+    flex-shrink: 2;
+}
+
+
+.terciario {
+    background-color: rgb(83, 123, 81);
+    flex-shrink: 1;
 }
 
 section>aside {
