@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+}
+
+.container {
+    border: 1px solid red;
+    display: flex;
+    width: 100%;
+}
+
+.principal {
+    flex-shrink: 6px;
+    background-color: yellowgreen;
+}
+
+.secundario {
+    background-color: rgb(93, 81, 123);
+}
+
+section>aside {
+    width: 150px;
+    background-color: rgb(143, 143, 195);
+}
