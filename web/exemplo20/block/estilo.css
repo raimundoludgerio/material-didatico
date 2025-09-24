@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 1;
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    display: block;
+}
+
+p {
+    background-color: #dbd3c9;
+    font-size: 1rem;
+    text-align: justify;
+}
+
+strong {
+    background-color: #c9c9db;
+    display: inline;
+}
+
+ul {
+    background-color: palevioletred;
+}
+
+li {
+    display: inline;
+    padding-right: 12px;
+}
+
+code {
+    font-size: 0.9rem;
+}
+
+.blocos {
+    display: block;
+    background-color: lightblue;
+}
