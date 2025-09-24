@@ -1,9 +1,13 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 .container {
     display: grid;
 }
 
 .item {
-    border: 1px solid black;
+    border: 1px solid rgb(9, 255, 0);
 }
 
 /* Comportamento do contêiner externo */
@@ -20,17 +24,18 @@
 .container-2 {
     border: 1px solid blue;
     display: grid;
-    grid-template-columns: 1fr 5fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr fr 1fr;
 }
 
 .container-3 {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: auto;
-    grid-template-areas:
-        "header header header header"
-        "sidebar .  main ."
-        "footer footer footer footer";
+    grid-template:
+        "header header header" 1fr
+        "sidebar main ." 150px
+        "footer footer footer" 1fr
+        / 1fr 2fr 1fr;
+    gap: 15px 45px;
 }
 
 .item-a {
@@ -55,4 +60,100 @@
 
 .item-container {
     border: 1px solid yellow;
+}
+
+.container-direita {
+    display: grid;
+
+    justify-items: end;
+    background-color: blanchedalmond;
+}
+
+.container-esquerda {
+    display: grid;
+    justify-items: start;
+    background-color: rgb(205, 233, 255);
+}
+
+.container-centralizado {
+    display: grid;
+    justify-items: center;
+    background-color: rgb(255, 205, 205);
+}
+
+.container-cima {
+    display: grid;
+    grid-template-rows: 90px;
+    align-items: start;
+    background-color: rgb(215, 211, 163);
+}
+
+.container-meio {
+    display: grid;
+    grid-template-rows: 90px;
+    align-items: center;
+    background-color: rgb(163, 166, 215);
+}
+
+.container-baixo {
+    display: grid;
+    grid-template-rows: 90px;
+    align-items: end;
+    background-color: rgb(215, 163, 215);
+}
+
+.container-base {
+    display: grid;
+    align-items: baseline;
+    grid-template-rows: 90px;
+    background-color: rgb(167, 215, 163);
+}
+
+.container-justificado-esquerda {
+    display: grid;
+    grid-template-rows: 90px;
+    justify-content: start;
+    background-color: rgb(99, 94, 253);
+}
+
+.container-justificado-direita {
+    display: grid;
+    grid-template-rows: 90px;
+    justify-content: end;
+    background-color: rgb(253, 94, 94);
+}
+
+.container-justificado-centro {
+    display: grid;
+    grid-template-rows: 90px;
+    justify-content: center;
+    background-color: rgb(157, 152, 116)
+}
+
+.container-justificado-espaço-entre {
+    display: grid;
+    grid-template-columns: 75px 100px 85px;
+    grid-template-rows: 75px;
+    justify-content: space-between;
+    background-color: rgb(116, 154, 157)
+}
+
+.container-justificado-espaço-redor {
+    display: grid;
+    grid-template-columns: 70px 90px 115px 250px;
+    grid-template-rows: 70px;
+    justify-content: space-around;
+    background-color: rgb(213, 94, 253);
+}
+
+.container-justificado-igual {
+    display: grid;
+    grid-template-columns: 75px 90px 115px 250px;
+    grid-template-rows: 70px;
+    justify-content: space-evenly;
+    background-color: rgb(99, 253, 94);
+}
+
+section>aside {
+    background-color: rgb(119, 71, 163);
 }
