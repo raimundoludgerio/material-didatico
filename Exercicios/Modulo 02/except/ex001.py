@@ -46,17 +46,20 @@ def le_numero():
 #     print("Algum outro erro aconteceu", ex)
 
 
+#/run/media/Marcos/Novo volume/repositorios-git/estrutura-de-dados/Exercicios/Modulo 02/arquivos/shrek1.txt
+arquivo_shrek = []
 try:
-    arquivo_shrek = open("../arquivos/shrek1.txt", 'r')
-    historia_completa = arquivo_shrek.readlines()
-    for linha in historia_completa:
-        print(linha)
-except IOError:
-    print("Erro ao abrir o arquivo")
+    novo_arquivo = open("./arquivo_novo.txt", 'w')
+    novo_arquivo.write("Aqui só pode String!!!!!!! ")
+    novo_arquivo.write(str(2))
+except IOError as io:
+    print("Erro ao abrir o arquivo", io)
+except Exception as ex:
+    print("Erro ao abrir o arquivo: ", ex)
 else:
-    print("Arquivo lido com sucesso!")
-finally:
-    arquivo_shrek.close()
+    print("Arquivo escrito com sucesso!")
+#finally:
+ #   arquivo_shrek.close()
 
 
 
