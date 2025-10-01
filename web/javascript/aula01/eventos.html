@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Exemplo com querySelectorAll e Eventos</title>
+    <style>
+        .mensagem {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Exemplo de querySelectorAll com Eventos</h1>
+
+    <p class="mensagem">Mensagem 1</p>
+    <p class="mensagem">Mensagem 2</p>
+    <p class="mensagem">Mensagem 3</p>
+
+    <button id="mudarCores">Mudar Cor dos Parágrafos</button>
+    <button id="mostrarTextos">Mostrar Textos dos Parágrafos</button>
+
+    <script>
+        // Seleciona todos os parágrafos com a classe .mensagem
+        const paragrafos = document.querySelectorAll('.mensagem');
+
+        // Botão para mudar a cor dos parágrafos
+        document.getElementById('mudarCores').addEventListener('click', () => {
+            paragrafos.forEach(p => {
+                p.style.color = 'blue';
+                p.style.fontWeight = 'bold';
+            });
+        });
+
+        // Botão para exibir os textos dos parágrafos em alertas
+        document.getElementById('mostrarTextos').addEventListener('click', () => {
+            paragrafos.forEach((p, index) => {
+                alert(`Parágrafo ${index + 1}: ${p.textContent}`);
+            });
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução a Javascript</title>
+</head>
+
+<body>
+    <p id="texto">Olá!</p>
+    <button onclick="mudarTexto()">Clique</button>
+    <script>
+        function mudarTexto() {
+            document.getElementById("texto").innerText = "Texto alterado com JS!";
+        }
+
+        let cor = "vermelho";
+        switch (cor) {
+            case "azul":
+                console.log("Cor do céu");
+                break;
+            case "vermelho":
+                console.log("Cor do fogo");
+                break;
+            default:
+                console.log("Outra cor");
+        }
+    </script>
+    
+</body>
+
+</html>

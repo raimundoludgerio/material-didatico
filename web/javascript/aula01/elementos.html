@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução a Javascript</title>
+</head>
+
+<body>
+    <h1 id="titulo">Título Principal</h1>
+    <p class="paragrafo">Parágrafo 1</p>
+    <p class="paragrafo">Parágrafo 2</p>
+    <div>
+        <span>Texto dentro do span</span>
+    </div>
+    <script>
+        // Seleciona o primeiro parágrafo com a classe .paragrafo
+        let primeiroParagrafo = document.querySelector('.paragrafo');
+        console.log(primeiroParagrafo.textContent);
+
+
+        // Seleciona o elemento com o id 'titulo'
+        // let titul    o = document.querySelector('#titulo');
+        console.log(titulo.textContent);
+
+        // Seleciona o primeiro <span>
+        let span = document.querySelector('span');
+        console.log(span.textContent);
+
+        let titulo = document.getElementById('titulo');
+        console.log(titulo.textContent);
+        
+        let paragrafos = document.getElementsByClassName('paragrafo');
+        console.log(paragrafos[0].textContent); // Parágrafo 1
+        console.log(paragrafos[1].textContent); // Parágrafo 2
+        
+        let spans = document.getElementsByTagName('span');
+        console.log(spans[0].textContent); // Texto dentro do span
+    </script>
+
+</body>
+
+</html>
