@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interagindo Formulário</title>
+    <style>
+        #info {
+            display: flex;
+            font-size: 2.4rem;
+            font-family: Arial, Helvetica, sans-serif, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="meuBotao">Clique aqui</button>
+    <input type="text" id="meuInput" placeholder="Digite algo">
+    <div id="info"></div>
+    <script>
+        
+
+
+        document.getElementById("meuBotao").addEventListener("click", () => {
+            let valor = document.getElementById("meuInput").value;
+            document.getElementById("info").innerHTML = valor;
+        });
+    </script>
+</body>
+
+</html>
