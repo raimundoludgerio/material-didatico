@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block titulo %} Página de Login {% endblock %}
+{% block conteudo %}
+<h2>Formulário de Login</h2>
+<form action="/cadastro" method="POST">
+
+    <div class="mb-3">
+        <label for="login" class="form-label">login</label>
+        <input type="text" class="form-control" id="login" placeholder="Informe o login">
+    </div>
+
+    <div class="mb-3">
+        <label for="senha" class="form-label">senha</label>
+        <input type="email" class="form-control" id="senha" placeholder="Informe sua senha">
+    </div>
+    <input type="submit" class="btn btn-primary" value="Enviar">
+</form>
+{% endblock %}

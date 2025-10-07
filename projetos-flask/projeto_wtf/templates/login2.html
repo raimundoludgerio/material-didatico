@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-header">
+                <h4 class="mb-0">Página login 2</h4>
+            </div>
+            <div class="card-body">
+                <form method="POST" action="{{ url_for('users.login2') }}">
+                    {{ formulario.hidden_tag() }}
+
+                    <div class="mb-3">
+                        {{ formulario.username.label(class="form-label") }}
+                        {{ formulario.username(class="form-control") }}
+                        {% if formulario.username.errors %}
+                            {% for erro in formulario.username.erros %}
+                                <small>aQUI VAI APARECER O ERRO</small>
+                            {% endfor %}
+                        {% endif %}
+                    </div>
+
+                    <div class="mb-3">
+                        {{formulario.senha.label}}
+                        {{ formulario.senha(class="form-control") }}
+                    </div>
+
+                    {{ formulario.botao(class="btn btn-primary") }}
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
