@@ -1,0 +1,22 @@
+[
+  {
+    "nome": "Ana Silva",
+    "email": "ana.silva@example.com"
+  },
+  {
+    "nome": "Bruno Oliveira",
+    "email": "bruno.oliveira@example.com"
+  },
+  {
+    "nome": "Carla Mendes",
+    "email": "carla.mendes@example.com"
+  },
+  {
+    "nome": "Diego Santos",
+    "email": "diego.santos@example.com"
+  },
+  {
+    "nome": "Eduarda Lima",
+    "email": "eduarda.lima@example.com"
+  }
+]
