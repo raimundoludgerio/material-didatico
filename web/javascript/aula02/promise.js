@@ -1,7 +1,48 @@
 // carregando usuários de uma API externa (exemplo)
-// const usuariosPromise = fetch(
-//     "https://raw.githubusercontent.com/raimundoludgerio/material-didatico/refs/heads/main/web/javascript/aula02/usuarios",
-// );
+
+
+async function carregarJson() {
+    const usuariosPromise = await fetch(
+        "https://raw.githubusercontent.com/raimundoludgerio/material-didatico/refs/heads/main/web/javascript/aula02/usuarios.json",
+    );
+    const usuarios = await usuariosPromise.json()
+    return usuarios;
+}
+
+carregarJson().then(usuarios => {
+    console.log(usuarios)
+});
+
+// usuariosPromise.then(response => {
+//     console.log(response.status)
+//     response.json().then(usuarios => {
+//         usuarios.forEach(element => {
+//             console.log(element.nome)
+//         });
+//     })
+// }).catch(error => {
+//     console.log(error)
+// })
+
+
+// const divConteudo = document.getElementById("conteudo")
+
+// const ul = document.createElement('ul')
+// divConteudo.appendChild(ul)
+// usuariosPromise.then(response => {
+//     response.json().then(objeto => {
+//         objeto.forEach(element => {
+//             const li = document.createElement('li')
+//             li.textContent = element.nome
+//             ul.appendChild(li);
+//         });
+//     })
+// }).catch(error =>{
+//     console.log("deu erro: " + error )
+// }).finally(() => {
+//     console.log("ESSA LINHA SEMPRE VAI APARECER")
+// })
+
 
 // usuariosPromise.then(response => {
 //     // Caso de sucesso (resolve)
@@ -24,41 +65,41 @@
 //         }
 //     }, 2000); // 2 segundos de "atraso"
 // });
-// const promiseCarregandoUsuarios = new Promise((resolve, reject) => {
-//     setTimeout(() => {
-//         const numero = Math.floor(Math.random() * 10)
-//         const sucesso = numero >= 5;
-//         if (sucesso) resolve("Usuários carregdos - " + numero);
-//         else reject("Erro ao carregar os usuários - " + numero);
-//     }, 2000);
-// });
-
-// promiseCarregandoUsuarios.then(resultado => {
-//     console.log("Deu certo: " + resultado);
-// }).catch(falha => {
-//     console.log("Não deu certo: " + falha);
-// });
-
-
-
-const promise1 = Promise.resolve(3);
-const promise2 = 42; // Valor não-promise é convertido
-const promise3 = new Promise((resolve) => {
-    setTimeout(resolve, 1000, "foo");
+const promiseCarregandoUsuarios = new Promise((resolve, reject) => {
+    setTimeout(() => {
+        const numero = Math.floor(Math.random() * 10)
+        const sucesso = numero >= 5;
+        if (sucesso) resolve("Usuários carregdos - " + numero);
+        else reject("Erro ao carregar os usuários - " + numero);
+    }, 2000);
 });
 
-// Promise.all([promise1, promise2, promise3])
-//     .then((valores) => {
-//         console.log(valores); // [3, 42, "foo"] após 1 segundo
-//     })
-//     .catch(erro => {
-//         console.error("Uma das promises falhou:", erro);
+promiseCarregandoUsuarios.then(resultado => {
+    console.log("Deu certo: " + resultado);
+}).catch(falha => {
+    console.log("Não deu certo: " + falha);
+});
+
+
+
+// const promise1 = Promise.resolve(3);
+// const promise2 = 42; // Valor não-promise é convertido
+// const promise3 = new Promise((resolve) => {
+//     setTimeout(resolve, 1000, "foo");
+// });
+
+// // Promise.all([promise1, promise2, promise3])
+// //     .then((valores) => {
+// //         console.log(valores); // [3, 42, "foo"] após 1 segundo
+// //     })
+// //     .catch(erro => {
+// //         console.error("Uma das promises falhou:", erro);
+// //     });
+
+// const promiseRapida = new Promise(resolve => setTimeout(resolve, 1000, "Rápida"));
+// const promiseLenta = new Promise(resolve => setTimeout(resolve, 3000, "Lenta"));
+
+// Promise.race([promiseRapida, promiseLenta])
+//     .then(vencedora => {
+//         console.log(vencedora); // "Rápida" (após 1s)
 //     });
-
-const promiseRapida = new Promise(resolve => setTimeout(resolve, 1000, "Rápida"));
-const promiseLenta = new Promise(resolve => setTimeout(resolve, 3000, "Lenta"));
-
-Promise.race([promiseRapida, promiseLenta])
-    .then(vencedora => {
-        console.log(vencedora); // "Rápida" (após 1s)
-    });

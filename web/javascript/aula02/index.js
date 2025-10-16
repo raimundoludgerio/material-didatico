@@ -1,17 +1,15 @@
-console.log("Inicio")
-alert("Exibindo uma mensagem")
-console.log("Fim...")
-
 function funcaoBase(callback) {
     setTimeout(() => {
-        callback("Argumento passado...");
+        callback();
     }, 2000);
 };
-
+funcaoBase(() => {
+    console.log("Imprimindo algo na tela")
+})
+console.log("Início do processo...");
 funcaoBase((argumento) => {
     console.log(argumento);
 });
-console.log("Início do processo...");
 setTimeout(() => {
     console.log("Etapa 1 concluída");
     setTimeout(() => {
@@ -26,3 +24,4 @@ setTimeout(() => {
     }, 1000);
 }, 1000);
 
+console.log("Fechei")

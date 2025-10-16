@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Deputados Federais - Dados Abertos</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Deputados Federais</h1>
+    <input 
+      type="text" 
+      id="busca"
+      placeholder="Buscar por nome..."
+      autocomplete="off"
+    />
+  </header>
+
+  <main>
+    <p id="status">⏳ Carregando dados da Câmara...</p>
+    <div id="container"></div>
+  </main>
+
+  <footer>
+    <p>Dados fornecidos pela <a href="https://dadosabertos.camara.leg.br/" target="_blank">Câmara dos Deputados</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

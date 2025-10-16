@@ -1,0 +1,129 @@
+/* --- Reset e base --- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: "Segoe UI", Roboto, sans-serif;
+    background-color: #f8f9f8;
+    color: #222;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  /* --- Cabeçalho --- */
+  header {
+    background-color: #006400;
+    color: white;
+    padding: 1.5rem 1rem;
+    text-align: center;
+  }
+  
+  header h1 {
+    margin-bottom: 0.5rem;
+    font-size: 1.8rem;
+  }
+  
+  #busca {
+    padding: 0.6rem 1rem;
+    border: none;
+    border-radius: 20px;
+    width: 90%;
+    max-width: 400px;
+    font-size: 1rem;
+    outline: none;
+  }
+  
+  /* --- Container principal --- */
+  main {
+    flex: 1;
+    padding: 2rem 1rem;
+  }
+  
+  #status {
+    text-align: center;
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    color: #555;
+  }
+  
+  /* --- Grid de cards --- */
+  #container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1rem;
+    justify-items: center;
+  }
+  
+  /* --- Card individual --- */
+  .card {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 100%;
+    max-width: 250px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* --- Foto --- */
+  .card img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+  }
+  
+  /* --- Conteúdo do card --- */
+  .card-content {
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  .card-content h3 {
+    font-size: 1.1rem;
+    color: #006400;
+    margin-bottom: 0.5rem;
+  }
+  
+  .card-content p {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 0.25rem;
+  }
+  
+  /* --- Rodapé --- */
+  footer {
+    text-align: center;
+    background-color: #eee;
+    padding: 1rem;
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  footer a {
+    color: #006400;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  footer a:hover {
+    text-decoration: underline;
+  }
+  
+  /* --- Responsividade --- */
+  @media (max-width: 480px) {
+    header h1 {
+      font-size: 1.4rem;
+    }
+    #busca {
+      width: 100%;
+    }
+  }
+  
