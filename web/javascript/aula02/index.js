@@ -2,6 +2,8 @@ console.log("Inicio")
 alert("Exibindo uma mensagem")
 console.log("Fim...")
 
+console.log()
+
 function funcaoBase(callback) {
     setTimeout(() => {
         callback("Argumento passado...");
