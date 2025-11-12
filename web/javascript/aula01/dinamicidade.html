@@ -8,23 +8,29 @@
     <style>
         #info {
             display: flex;
-            font-size: 2.4rem;
             font-family: Arial, Helvetica, sans-serif, sans-serif;
+            
         }
     </style>
 </head>
 
 <body>
-    <button id="meuBotao">Clique aqui</button>
     <input type="text" id="meuInput" placeholder="Digite algo">
-    <div id="info"></div>
+    <button id="meuBotao">Clique aqui</button>
+
+    <div id="info">Texto</div>
     <script>
-        
+        const botao = document.getElementById("meuBotao");
 
-
-        document.getElementById("meuBotao").addEventListener("click", () => {
-            let valor = document.getElementById("meuInput").value;
-            document.getElementById("info").innerHTML = valor;
+        botao.addEventListener("click", () => {
+            const valor = document.getElementById("meuInput").value;
+            const resultado = document.getElementById("info") 
+            resultado.style.backgroundColor = "#ab7878";
+            resultado.style.display = "flex";
+            resultado.style.justifyContent = "center";
+            resultado.style.alignItems = "center";
+            resultado.style.fontSize = '1.5em';
+            resultado.innerHTML = `<h1>${valor}</h1>`;
         });
     </script>
 </body>
