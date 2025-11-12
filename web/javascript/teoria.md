@@ -47,6 +47,7 @@ const server = http.createServer((req, res) => {
 server.listen(3000, () => {
   console.log('Servidor rodando na porta 3000');
 });
+```
 
 ## História e Definição do Node.js
 
@@ -70,7 +71,7 @@ server.listen(3000, () => {
 
 ### Criando um Servidor HTTP Básico
 
-\`\`\`javascript
+```javascript
 // server.js
 const http = require('http');
 
@@ -90,12 +91,12 @@ const server = http.createServer((req, res) => {
 server.listen(3000, () => {
     console.log('Servidor rodando na porta 3000');
 });
-\`\`\`
+```
 
 ### Executando a Aplicação
-\`\`\`bash
+```bash
 node server.js
-\`\`\`
+```
 
 ---
 
@@ -118,16 +119,16 @@ node server.js
 ## Exemplo de Aplicação com Express
 
 ### Estrutura do Projeto
-\`\`\`
+```
 meu-projeto/
 ├── package.json
 ├── server.js
 └── routes/
     └── users.js
-\`\`\`
+```
 
 ### server.js
-\`\`\`javascript
+```javascript
 const express = require('express');
 const userRoutes = require('./routes/users');
 
@@ -144,10 +145,10 @@ app.get('/', (req, res) => {
 app.listen(PORT, () => {
     console.log(`Servidor Express rodando na porta ${PORT}`);
 });
-\`\`\`
+```
 
 ### routes/users.js
-\`\`\`javascript
+```javascript
 const express = require('express');
 const router = express.Router();
 
@@ -167,7 +168,7 @@ router.get('/:id', (req, res) => {
 });
 
 module.exports = router;
-\`\`\`
+```
 
 ---
 
