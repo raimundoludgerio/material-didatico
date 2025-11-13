@@ -13,58 +13,58 @@ carregarJson().then(usuarios => {
     console.log(usuarios)
 });
 
-// usuariosPromise.then(response => {
-//     console.log(response.status)
-//     response.json().then(usuarios => {
-//         usuarios.forEach(element => {
-//             console.log(element.nome)
-//         });
-//     })
-// }).catch(error => {
-//     console.log(error)
-// })
+usuariosPromise.then(response => {
+    console.log(response.status)
+    response.json().then(usuarios => {
+        usuarios.forEach(element => {
+            console.log(element.nome)
+        });
+    })
+}).catch(error => {
+    console.log(error)
+})
 
 
-// const divConteudo = document.getElementById("conteudo")
+const divConteudo = document.getElementById("conteudo")
 
-// const ul = document.createElement('ul')
-// divConteudo.appendChild(ul)
-// usuariosPromise.then(response => {
-//     response.json().then(objeto => {
-//         objeto.forEach(element => {
-//             const li = document.createElement('li')
-//             li.textContent = element.nome
-//             ul.appendChild(li);
-//         });
-//     })
-// }).catch(error =>{
-//     console.log("deu erro: " + error )
-// }).finally(() => {
-//     console.log("ESSA LINHA SEMPRE VAI APARECER")
-// })
-
-
-// usuariosPromise.then(response => {
-//     // Caso de sucesso (resolve)
-//     console.log(response.status);
-// }).catch(error => {
-//     // Caso de sucesso (reject)
-//     console.log(error);
-// }).finally(() => {
-//     // Executa sempre
-//     console.log("operação finalizada, mesmo se der erro ou não");
-// });
+const ul = document.createElement('ul')
+divConteudo.appendChild(ul)
+usuariosPromise.then(response => {
+    response.json().then(objeto => {
+        objeto.forEach(element => {
+            const li = document.createElement('li')
+            li.textContent = element.nome
+            ul.appendChild(li);
+        });
+    })
+}).catch(error =>{
+    console.log("deu erro: " + error )
+}).finally(() => {
+    console.log("ESSA LINHA SEMPRE VAI APARECER")
+})
 
 
-// const minhaPromise = (usuario, senha) => new Promise((resolve, reject) => {
-//     setTimeout(() => {
-//         if (usuario === "admin" && senha === "1234") {
-//             resolve("Login bem-sucedido!");
-//         } else {
-//             reject("Usuário ou senha incorretos.");
-//         }
-//     }, 2000); // 2 segundos de "atraso"
-// });
+usuariosPromise.then(response => {
+    // Caso de sucesso (resolve)
+    console.log(response.status);
+}).catch(error => {
+    // Caso de sucesso (reject)
+    console.log(error);
+}).finally(() => {
+    // Executa sempre
+    console.log("operação finalizada, mesmo se der erro ou não");
+});
+
+
+const minhaPromise = (usuario, senha) => new Promise((resolve, reject) => {
+    setTimeout(() => {
+        if (usuario === "admin" && senha === "1234") {
+            resolve("Login bem-sucedido!");
+        } else {
+            reject("Usuário ou senha incorretos.");
+        }
+    }, 2000); // 2 segundos de "atraso"
+});
 const promiseCarregandoUsuarios = new Promise((resolve, reject) => {
     setTimeout(() => {
         const numero = Math.floor(Math.random() * 10)

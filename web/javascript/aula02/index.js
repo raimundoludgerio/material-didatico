@@ -1,12 +1,9 @@
-<<<<<<< HEAD
 console.log("Inicio")
 alert("Exibindo uma mensagem")
 console.log("Fim...")
 
 console.log()
 
-=======
->>>>>>> 36bc7ff2324cd2965ce1e3bbe3e5b39169b7b2e2
 function funcaoBase(callback) {
     setTimeout(() => {
         callback();
