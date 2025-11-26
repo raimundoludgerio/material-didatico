@@ -1,0 +1,26 @@
+# Dependências
+node_modules/
+
+# Arquivos de build e logs
+/dist
+/build
+*.log
+
+# Arquivos de ambiente
+.env
+.env.*
+!.env.example
+
+# Arquivos de sistema operacional
+.DS_Store
+
+# Arquivos de IDEs e editores
+.vscode/
+.idea/
+
+# Arquivos gerados
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+aula01/node_modules/**/*
+aula01/gerenciador-tarefas/node_modules/**/*
