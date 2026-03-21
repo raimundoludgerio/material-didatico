@@ -46,10 +46,22 @@ h2 {
 }
 
 .profile-info h1 {
-    margin: 0;
+    margin: 10px 0px 30px 
+    
+    
+    0px;
     font-size: 32px;
     font-weight: 800;
     color: #fff;
+    transition: color 1000ms ease;
+     transition: font-size 1000ms ease
+}
+
+.profile-info h1:hover {
+    
+    font-size: 36px;
+    color: #D6D5A8;
+
 }
 
 .profile-info p {

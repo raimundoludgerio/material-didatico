@@ -25,7 +25,7 @@
     border: 1px solid blue;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr fr 1fr;
+    grid-template-rows: 1fr 6fr 1fr;
 }
 
 .container-3 {
@@ -35,7 +35,7 @@
         "sidebar main ." 150px
         "footer footer footer" 1fr
         / 1fr 2fr 1fr;
-    gap: 15px 45px;
+ /*   gap: 150px 450px;*/
 }
 
 .item-a {
@@ -46,6 +46,9 @@
 .item-b {
     background-color: rgb(154, 166, 240);
     grid-area: main;
+    justify-content: center;
+    align-items: center;
+    display: grid;
 }
 
 .item-c {
@@ -64,7 +67,6 @@
 
 .container-direita {
     display: grid;
-
     justify-items: end;
     background-color: blanchedalmond;
 }

@@ -6,11 +6,63 @@
     <title>Imagens Dinâmicas</title>
 </head>
 <body>
-    <picture>
+    <form action="#" method="post">
+        <label for="nome">Informe o seu nome: </label>
+        <input type="text" name="nome" id="nome" placeholder="Informe o seu nome: " required>
+        <br>
+        <label for="senha">Informe o seu senha: </label>
+        <input type="password" name="senha" id="senha" placeholder="Digite sua senha, xuxu: ">
+        <br>
+        <label for="comentario">Comentário</label><br>
+        <textarea rows="6" id="comentario" name="comentario"></textarea>
+        <br>
+
+        <input type="radio" name="opcao1" id="opcao1"> <label for="opcao1">A</label>
+        <input type="radio" name="opcao1" id="opcao1">  <label for="opcao2">B</label>
+        <br>
+        
+        <input type="checkbox" name="opcao1" id="opcao1"> <label for="opcao1">A</label>
+        <input type="checkbox" name="opcao1" id="opcao1">  <label for="opcao2">B</label>
+        <input type="checkbox" name="opcao1" id="opcao1">  <label for="opcao2">C</label>
+        
+        <br>
+        <select name="estado" id="estado">
+            <option value="A">Paraíba</option>
+            <option value="B">Rio Grande do Norte</option>
+            <option value="C">Ceará</option>
+        </select>
+        <br>
+        <label for="email">Informe o seu e-mail</label>
+        <input type="email" name="email" id="email">
+        <br>
+        <label for="idae">Qual a sua idade?</label>
+        <input type="number" name="idae" id="idae">
+        <br>
+        <label for="datanascimento">Quando você nasceu, existia televisão colorida?</label>
+        <input type="datetime-local" name="data" id="data">
+        <br>
+        <label for="arquivo">Coloque você bonitão: </label>
+        <input type="file" name="foto" id="foto">
+        <br>
+        <label for="corzinha">Qual sua cor favorita? </label>
+        <input type="color" name="foto" id="foto">
+        <br>
+
+         <label for="volume">Qual sua cor favorita? </label>
+        <input type="range" name="foto" id="foto">
+        <br>
+        <input type="submit" value="Enviar!">
+    </form>
+    <br>
+    <br>
+
+    <br>
+    <br>
+    <!-- <picture>
         <source media="(max-width: 350px)" srcset="imagens/lua-300px.png">
         <source media="(max-width: 750px)" srcset="imagens/lua-300px.png">
         <source media="(max-width: 1050px)" srcset="imagens/lua-700px.png">
         <img src="imagens/lua-1000px.png" alt="lua de noite no escuro" srcset="imagens/lua-1000px.png">
-    </picture>
+    </picture> -->
 </body>
 </html>
