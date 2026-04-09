@@ -13,11 +13,14 @@
         body {
             display: flex;
             justify-content: center;
-            ba
+            background-color: aqua;
             align-items: center;
+            flex-direction: column; /*row -> elemento | elemento; colum -> elemento
+                                                                     elemento*/
         }
 
         table {
+            width: 85%;
             background-color: #fff;
         }
 
@@ -25,16 +28,18 @@
             width: 150px;
             height: 150px;
             border-radius: 15px;
-            marg-left: 15;
+            margin-left: 15;
             box-shadow: 3px 3px 10px #00000068;
         }
 
-        #metade {}
+        td{
+            text-align: center;
+        }
     </style>
 </head>
 
 <body>
-    <div id="metade"></div>
+    <h1>Olá, mundo</h1>
     <table border="1" cellpadding="10" cellspacing="0">
         <thead>
             <tr>
@@ -45,7 +50,7 @@
                 <td> <img src="./img/perfil.png" alt="Foto de perfil" class="foto-perfil" />
                     <h2>Nome da pessoa</h2>
                 </td>
-                <td>Terceira coluna</td>
+                <td><img src="img/adeilmaaa.jpg" alt="Foto Adeilma" /></td>
                 <td>Quarta coluna</td>
                 <td>Quinta coluna</td>
             </tr>
