@@ -22,7 +22,7 @@ function compararValores() {
 
 
 const nome = document.getElementById("campoSenha").value;
-document.getElementById("info").innerHTML = `<h1> Testando o ${nome} </h1>`
+
 
 
 document.getElementById("campoEmail").addEventListener("click", () => {
