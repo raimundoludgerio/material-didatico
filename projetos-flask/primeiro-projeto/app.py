@@ -1,5 +1,11 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request
+from datetime import datetime
 app = Flask(__name__)
+users = []
+
+@app.route('/')
+def home():
+    return f'<h1> Essa é a página inicial </h1>'
 
 @app.route('/<nome>')
 def nome(nome):
@@ -20,8 +26,14 @@ def file(arquivo):
     return f'Solicitado {arquivo}!'
 
 
-@app.route('/cadastro')
+@app.route('/cadastro', methods=["GET", "POST"])
 def adicionar():
+    if request.method == "POST":
+        nome = request.form["nome"]
+        hora = datetime.now().hour
+        user = {"id": 0, "nome":nome, "hora": str(hora)}
+        users.append(user)
+        return f"Usuario {nome} cadastrado com sucesso"
     return render_template("cadastro.html")
 
 @app.route('/busca')
@@ -31,9 +43,9 @@ def buscar():
     return f"Seu nome: {nome} e {sobrenome}"
 
 @app.route('/lista')
-def buscar():
-    lista = request.args.getList('lista')
-    return f"Seu nome:{lista}"
+def listar():
+    #lista = request.args.getList('lista')
+    return render_template("listagem.html", users=users)
 
 
 if __name__ == '__main__':
