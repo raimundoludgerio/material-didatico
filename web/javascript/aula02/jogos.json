@@ -1,0 +1,14 @@
+[
+    {
+        "id": "101",
+        "userId": "1",
+        "name": "Catan",
+        "category": "Estratégia",
+        "players": "3-4",
+        "playTime": 90,
+        "status": "quero jogar",
+        "notes": "Jogo clássico de negociação",
+        "createdAt": "2026-05-13T10:00:00.000Z",
+        "updatedAt": "2026-05-13T10:00:00.000Z"
+      }
+]
