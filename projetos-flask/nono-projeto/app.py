@@ -16,6 +16,7 @@ def index():
         return render_template('index.html', username=session['username'])
     return redirect(url_for('login'))
 
+
 @app.route('/register', methods=['GET', 'POST'])
 def register():
     if request.method == 'POST':
@@ -41,6 +42,13 @@ def register():
         
     return render_template('cadastro.html')
 
+"""
+    GET (nada) -> Recuperar a tela de logi
+    POST (user, senha) -> Fazer login na app
+    REQUEST == requisição
+    RESPONDE == resposta
+"""
+
 @app.route('/login', methods=['GET', 'POST'])
 def login():
     if request.method == 'POST':
@@ -50,7 +58,7 @@ def login():
         users = models.load_users()
         if len(users) == 0:
             flash('Usuário ou senha incorretos.', 'error')
-            redirect(url_for('login'))
+            return redirect(url_for('login'))
         # Verifica se o usuário existe e se a senha confere
         print(username)
         

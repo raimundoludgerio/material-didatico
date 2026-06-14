@@ -1,6 +1,10 @@
 [
     {
         "username": "a",
-        "password": "scrypt:32768:8:1$TmQgSMCq1PfW9a6C$7d078607aa9840f731fca279494085dbf20d940d196c588fc4cbec4fb909baf6745621532532d14f81041730da65a35297fc09e71ac75af9041d2edcf6296df9"
+        "password": "scrypt:32768:8:1$L64l3awMnpRwHi2e$0803b3db7cc5ebbaf3903a1f95e7ccdc10270bfae7daa89efc17ef74558bcefbd94053bdb502de4673d6a432dc7d9088ff1ae3ed347498589f73f7b8a585ee5a"
+    },
+    {
+        "username": "a",
+        "password": "scrypt:32768:8:1$Xwqogz0JSZ0tEJcH$6a0b0ca730bb922ea0e6208011b59bf5d934e27e01832567d6ce7d7115f28bef0f3ef4691aacff0775ba02050b2781b4dcc651d767edcc9a87e653faae733d68"
     }
 ]
