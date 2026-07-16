@@ -44,8 +44,8 @@ def register():
 
 """
     GET (nada) -> Recuperar a tela de logi
-    POST (user, senha) -> Fazer login na app
     REQUEST == requisição
+    POST (user, senha) -> Fazer login na app
     RESPONDE == resposta
 """
 
