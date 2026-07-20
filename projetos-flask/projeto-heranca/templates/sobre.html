@@ -1,29 +1,8 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
+{% extends 'base.html' %}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
-</head>
-
-<body>
-    <header>
-        <h1>Meu Site Flask</h1>
-        <nav> <a href="/">Home</a> | <a href="/produtos">Produtos</a> | <a href="/sobre">Sobre</a> | <a
-                href="/contato">Contato</a> </nav>
-        <hr>
-    </header>
-    <main>
-        <h2>Sobre</h2>
-        <p> Este projeto foi desenvolvido para demonstrar os recursos do Flask. </p>
-        <p> Em breve aprenderemos a utilizar herança de templates para evitar repetição de código. </p>
-    </main>
-    <hr>
-    <footer>
-        <p>© 2026 - Curso de Flask</p>
-    </footer>
-</body>
-
-</html>
+{% block titulo %} Homepage {% endblock %}
+{% block conteudo %}
+    <h2>Sobre</h2>
+    <p> Este projeto foi desenvolvido para demonstrar os recursos do Flask. </p>
+    <p> Em breve aprenderemos a utilizar herança de templates para evitar repetição de código. </p>
+{% endblock %}
