@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block titulo %} Cadastro de Produto {% endblock %}
+
+{% block conteudo %}
+<form action="/produto" method="POST">
+    <input type="text" name="nomeProduto" id="nomeProduto" required placeholder="Informe um nome do produto">
+    <br>
+    <input type="submit" name="" id="botaoCadastrar" value="Enviar">
+</form>
+{% with messages = get_flashed_messages(with_categories=true) %}
+{% if messages %}
+{% for category, message in messages %}
+<!-- Exemplo usando classes de alerta do Bootstrap -->
+<div class="alert alert-{{ category }} alert-dismissible fade show" role="alert">
+    {{ message }}
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+{% endfor %}
+{% endif %}
+{% endwith %}
+{% endblock %}
