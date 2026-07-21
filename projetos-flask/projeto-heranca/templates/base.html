@@ -11,14 +11,21 @@
 <body>
     <header>
         <h1>Meu Site Flask</h1>
-        
-        <nav> <a href="/">Home</a> | <a href="/produtos">Produtos</a> | <a href="/sobre">Sobre</a> | <a
-                href="/contato">Contato</a> </nav>
+
+        <nav>
+            <a href="/">Home</a> |
+            <a href="/produtos">Produtos</a> |
+            <a href="/sobre">Sobre</a> |
+            <a href="/contato">Contato</a>|
+            <a href="/cadastro_produto">Cadastrar novo produto</a>
+
+
+        </nav>
         <hr>
     </header>
     <main>
-       {% block conteudo %}
-       {% endblock %}
+        {% block conteudo %}
+        {% endblock %}
     </main>
     <hr>
     <footer>

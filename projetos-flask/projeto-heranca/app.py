@@ -1,4 +1,5 @@
-from flask import Flask, render_template, request, flash, redirect, url_for
+from flask import Flask, render_template, request
+
 from utils import json_manager
 
 app = Flask(__name__)
@@ -18,13 +19,16 @@ def produtos():
 def produto():
     if request.method == "POST":
         nome_produto = request.form.get("nomeProduto").strip()
-        print(nome_produto)
         if nome_produto == "":
             flash("Campo obrigatório", "danger")
             return redirect(url_for('produto'))
         json_manager.salvar_produto(nome_produto)
         flash("Produto Cadastrado com sucesso", "success")
     return render_template("cadastro.html")
+
+@app.route("/cadastro_produto", methods=["GET", "POST"])
+def cadastro_produto():
+    return render_template("cadastro_produto.html")
 
 @app.route("/sobre")
 def sobre():
