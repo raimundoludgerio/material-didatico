@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <style>
+        .container {
+            position: relative;
+            width: 400px;
+            height: 300px;
+            background-color: lightgray;
+        }
+
+        .box-a {
+            border: 1px solid green;
+            position: static;
+            top: 50px;
+            left: 50px;
+            width: 100px;
+            height: 100px;
+        }
+
+        .box-b {
+            border: 1px solid red;
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            width: 100px;
+            height: 100px;
+        }
+
+        .box-c {
+            border: 1px solid blue;
+            position: relative;
+            top: -20px;
+            left: 10px;
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box-a">A</div>
+        <div class="box-b">B</div>
+        <div class="box-c">C</div>
+    </div>
+</body>
+
+</html>
