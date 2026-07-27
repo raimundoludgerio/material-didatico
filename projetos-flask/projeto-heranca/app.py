@@ -18,16 +18,13 @@ def produtos():
 @app.route("/produto", methods = ["GET", "POST"])
 def produto():
     if request.method == "POST":
-        nome_produto = request.form.get("nomeProduto").strip()
-        if nome_produto == "":
-            flash("Campo obrigatório", "danger")
-            return redirect(url_for('produto'))
-        json_manager.salvar_produto(nome_produto)
-        flash("Produto Cadastrado com sucesso", "success")
+        print("enviado via post")
     return render_template("cadastro.html")
 
 @app.route("/cadastro_produto", methods=["GET", "POST"])
 def cadastro_produto():
+    if request.method == "POST":
+        print("enviado via post")
     return render_template("cadastro_produto.html")
 
 @app.route("/sobre")
