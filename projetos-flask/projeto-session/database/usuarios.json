@@ -1,0 +1,44 @@
+{
+  "carlos@email.com": {
+    "nome": "Carlos Silva",
+    "email": "carlos@email.com",
+    "senha": "1234",
+    "nivel": "Admin"
+  },
+  "ana@email.com": {
+    "nome": "Ana Souza",
+    "email": "ana@email.com",
+    "senha": "1234",
+    "nivel": "User"
+  },
+  "joao@email.com": {
+    "nome": "João Pereira",
+    "email": "joao@email.com",
+    "senha": "1234",
+    "nivel": "User"
+  },
+  "mariana@email.com": {
+    "nome": "Mariana Costa",
+    "email": "mariana@email.com",
+    "senha": "1234",
+    "nivel": "User"
+  },
+  "felipe@email.com": {
+    "nome": "Felipe Oliveira",
+    "email": "felipe@email.com",
+    "senha": "1234",
+    "nivel": "Admin"
+  },
+  "juliana@email.com": {
+    "nome": "Juliana Martins",
+    "email": "juliana@email.com",
+    "senha": "1234",
+    "nivel": "User"
+  },
+  "ricardo@email.com": {
+    "nome": "Ricardo Almeida",
+    "email": "ricardo@email.com",
+    "senha": "1234",
+    "nivel": "User"
+  }
+}
