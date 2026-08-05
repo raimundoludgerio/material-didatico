@@ -10,6 +10,15 @@
             background-image: url("");
         }
 
+        table {
+            border: 1px solid red;
+        }
+
+        td, th {
+            border: 1px solid green;
+        }
+
+
         h1 {
             font-size: 140px;
             color: #1300c1;
@@ -26,13 +35,24 @@
 </head>
 
 <body>
-    <h1>Olá, tudo bem?</h1>
-    <h1 id="outro">OUTRO TEXTO?</h1>
-
-
-    <p>
-        #
-    </p>
+    <table>
+        <caption>Tabela 1 - Listagem</caption>
+        <tr>
+            <th>Id</th>
+            <th>Nome</th>
+            <th>Cidade</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Josef</td>
+            <td>Aracaju</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Lucelia</td>
+            <td>Patos</td>
+        </tr>
+    </table>
 </body>
 
 </html>

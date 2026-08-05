@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, flash, session, redirect, url_for
+from flask import Flask, render_template, request, flash, redirect, url_for, session
 from controller import usuario_controller
 
 app = Flask(__name__)
@@ -13,14 +13,23 @@ def index():
 def cadastro():
     return render_template("cadastro.html")
 
+@app.route("/dashboard")
+def dashboard():
+    if "user" not in session:
+        return redirect(url_for("login"))
+    return render_template("dashboard.html")
+
+
 
 @app.route("/perfil")
 def perfil():
     usuario_logado = session.get("user")
     if usuario_logado:
         user = usuario_controller.recuperar_usuario(usuario_logado)
+        print(user)
         return render_template("perfil.html", usuario=user)
     return redirect(url_for("login"))
+
 
 
 @app.route("/login", methods = ["GET", "POST"])
@@ -36,9 +45,10 @@ def login():
             flash("Verifique os dados e tente novamente", "danger")
     return render_template("login.html")
 
-@app.route("/logout", methods = ["GET", "POST"])
+@app.route("/logout")
 def logout():
     session.pop('user', None)
+    flash("Usuário Desconectado", "info")
     return redirect(url_for("login"))
 
 if __name__ == "__main__":

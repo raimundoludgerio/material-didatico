@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, session
 
 from utils import json_manager
 
@@ -10,6 +10,17 @@ app.secret_key = 'NyNpVOZCMICdqIbrj2h4'
 def index():
     return render_template("index.html")
 
+
+@app.route("/login", methods = ["GET", "POST"])
+def login():
+    if request.method == "POST":
+        print("Aqui criamos a seção")
+        login = request.form.get("login")
+        senha = request.form.get("senha")
+        print(login, senha)
+        session["login"] = login
+        session["senha"] = senha
+    return render_template("login.html")
 
 @app.route("/produtos", methods = ["GET", "POST"])
 def produtos():
